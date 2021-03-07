@@ -23,7 +23,6 @@ function findLamp() {
 				var button = document.getElementById("connectbutton");
 				button.innerHTML = "Connected";
 				button.style.backgroundColor = "green";
-				button.style.borderColor = "green";
             });
         });
     } catch(err) {
