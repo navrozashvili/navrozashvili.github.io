@@ -17,6 +17,11 @@ var nameCommandPrefix="58";
 var bulbName;
 var bulbBrightness;
 
+function setBrightnessFromSlider()
+{
+  var percentage = document.getElementById("brightnesSlider").value;
+  setBrightnessByPercentage(percentage);
+}
 function setRGB(red,green,blue)
 {
 	setColor(Math.min(red,green,blue),scaleValue(red),scaleValue(green),scaleValue(blue));

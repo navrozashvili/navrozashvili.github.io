@@ -22,7 +22,7 @@ h2 {
 	margin: 0;
 	color: #eee;
 }
-
+#slidecontainer div,
 #connect div,
 #presets div {
 	font-weight: bold;
@@ -62,7 +62,7 @@ h2 {
 	padding: 8px;
 	border: 2px solid white;
 }
-
+#slidecontainer div.brightness{background-color: white;}
 #presets div.red { background-color: red; }
 #presets div.green { background-color: green; }
 #presets div.blue { background-color: blue; color: #ccc; }
