@@ -21,6 +21,7 @@ function findLamp() {
                 characteristic = char;
                 console.log('> Characteristic UUID:    ' + characteristic.uuid);
 				var button = document.getElementById("connectbutton");
+				subscribeToBulbNotifications();
 				button.innerHTML = "Connected";
 				button.style.backgroundColor = "green";
             });
