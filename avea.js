@@ -109,7 +109,7 @@ function setColor(white,red,green,blue)
 	var redHex=decimalNumberToLittleEndianHex(checkValueBounds(red)|0x3000);
 	var greenHex=decimalNumberToLittleEndianHex(checkValueBounds(green)|0x2000);
 	var blueHex=decimalNumberToLittleEndianHex(checkValueBounds(blue)|0x1000);
-	setValue(colorCommandPrefix+whiteHex+redHex+greenHex+blueHex);
+	setHexValue(colorCommandPrefix+whiteHex+redHex+greenHex+blueHex);
 }
 function setBrightnessByPercentage(value)
 {
