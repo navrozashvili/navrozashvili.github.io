@@ -26,6 +26,10 @@ function setRGB(red,green,blue)
 {
 	setColor(Math.min(red,green,blue),scaleValue(red),scaleValue(green),scaleValue(blue));
 }
+function setRGBnoW(red,green,blue)
+{
+	setColor(0,scaleValue(red),scaleValue(green),scaleValue(blue));
+}
 function scaleValue(value)
 {
 	return ((value+1)*16)-1;
