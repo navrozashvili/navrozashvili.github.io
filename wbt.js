@@ -17,13 +17,15 @@ function findLamp() {
             console.log('')
             console.log('Getting Characteristic...');
             service.getCharacteristic(color_characteristic_uuid)
-            .then(char => {
+            .then(async char => {
                 characteristic = char;
                 console.log('> Characteristic UUID:    ' + characteristic.uuid);
 				var button = document.getElementById("connectbutton");
 				subscribeToBulbNotifications();
 				button.innerHTML = "Connected";
 				button.style.backgroundColor = "green";
+				await sleep(500);
+				await setbrightnessSilderValue();
             });
         });
     } catch(err) {

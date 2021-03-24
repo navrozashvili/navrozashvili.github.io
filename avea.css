@@ -4,7 +4,15 @@ body {
 	font-family: sans-serif;
 	color: #333;
 }
+p,
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+	color:magenta;
+}
 
+input {
+    margin: .4rem;
+}
 textarea {
 	display: none;
 }
@@ -51,7 +59,24 @@ h2 {
 #connect div:hover {
 	background-color: #37b2d7;
 }
-
+.sequence{
+	font-weight: bold;
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 10px 15px 10px 0;
+	display: inline-block;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 #presets div {
 	padding: 10px;
 	margin: 10px 15px 10px 0;
@@ -62,6 +87,7 @@ h2 {
 	padding: 8px;
 	border: 2px solid white;
 }
+.sequence{background-color: rosybrown;}
 #slidecontainer div.brightness{background-color: white;}
 #presets div.red { background-color: red; }
 #presets div.green { background-color: green; }

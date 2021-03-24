@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <script src="avea.js"></script>
   <script src="wbt.js"></script>
+  <script src="colors.js"></script>
   <link rel="stylesheet" type="text/css" href="avea.css">
-  
+
   <title>Elgato Avea</title>
 </head>
+
 <body>
   <h1>Elgato Avea Light Bulb</h1>
   <h2>remote control</h2>
   <div id="connect">
     <div id="connectbutton" onclick="findLamp()">Connect</div>
   </div>
+  <hr class="solid">
+  <div>
+    <p>Choose your colors:</p>
+    <div>
+      <label for="colorFrom">Starting color</label>
+      <input type="color" id="colorFrom" name="colorFrom" value="#00FFFF">
+      <br>
+      <label for="colorTo">Final color</label>
+      <input type="color" id="colorTo" name="colorTo" value="#FF00FF"><br>
+      <label for="iterations">Iterations</label>
+      <input type="text" id="iterations" name="iterations" value="100"><br>
+      <div id="startButton" class="sequence" onclick="startColorSequence()">Start</div><br>
+      <p>note: in order for this to work, you need to leave browser running</p>
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <hr class="solid">
+  <br>
+  <br>
+  <br>
+  <hr class="solid">
   <div id="controls">
     <div id="slidecontainer">
       <input id="brightnesSlider" type="range" min="1" max="100" value="100">
       <div class="brightness" onclick="setBrightnessFromSlider()">set brightness</div>
     </div>
   </div>
+  <hr class="solid">
+  <br>
+  <br>
+  <br>
+  <hr class="solid">
   <div id="presets" class="">
-      <div class="off" onclick="setOff()">Off</div>
-      <div class="red" onclick="setRed()">Red</div>
-      <div class="green" onclick="setGreen()">Green</div>
-      <div class="blue" onclick="setBlue()">Blue</div>
-      <br>
-      <div class="white" onclick="setWhite()">White</div>
-      <div class="yellow" onclick="setYellow()">Yellow</div>
-      <div class="cyan" onclick="setCyan()">Cyan</div>
-      <div class="magenta" onclick="setMagenta()">Magenta</div>
-	  <br>
-	  <div class="white" onclick="setWhite2()">White2</div>
+    <p>Color presets</p>
+    <div class="off" onclick="setOff()">Off</div>
+    <div class="red" onclick="setRed()">Red</div>
+    <div class="green" onclick="setGreen()">Green</div>
+    <div class="blue" onclick="setBlue()">Blue</div>
+    <br>
+    <div class="white" onclick="setWhite()">White</div>
+    <div class="yellow" onclick="setYellow()">Yellow</div>
+    <div class="cyan" onclick="setCyan()">Cyan</div>
+    <div class="magenta" onclick="setMagenta()">Magenta</div>
+    <br>
+    <div class="white" onclick="setWhite2()">White2</div>
   </div>
+  <hr class="solid">
 </body>
+
 </html>
