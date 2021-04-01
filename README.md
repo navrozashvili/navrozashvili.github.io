@@ -12,4 +12,5 @@ For some reason it will revert back to old color once you turn off and turn on t
 # Credits
 https://github.com/szeged/servo/tree/gh-pages/demos/elgato<br/>
 https://github.com/Marmelatze/avea_bulb<br/>
-https://github.com/k0rventen/avea
+https://github.com/k0rventen/avea<br/>
+https://github.com/ern0/kolorwheel.js
