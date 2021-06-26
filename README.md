@@ -1,5 +1,7 @@
 # Elgato avea
 Since android 10 update Elgato Avea lightbulb android application is no longer maintained so it got removed from play store. Goal of this repo is to regain control on the light bulb using chromium's ble capabilities
+
+UPDATE: Android 11 update fixed app so this is pretty much obsolete.
 # Progress
 Added:
 brightness control<br/>
